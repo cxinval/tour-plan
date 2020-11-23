@@ -5,15 +5,16 @@
     display: flex
     align-items: center
     justify-content: space-between
+    padding-bottom: 20px
     &__offer
       margin-left: 14px
       margin-top: 4px
     &__name
       margin-top: 4px
       margin-bottom: 0
-    &__description 
-      margin: 5px 0 
-        
+    &__description
+      margin: 5px 0
+
   &-name
     font-size: 24px
     line-height: 30px
@@ -24,6 +25,7 @@
   &-discription
     font-size: 12px
     line-height: 15px
+
 .stars
   width: 100%
 .offer
@@ -44,6 +46,47 @@
   &__text
     font-size: 8px
     line-height: 10px
-  &__counter  
+  &__counter
     font-size: 14px
     line-height: 18px
+
+.swiper-container
+  width: 100%
+  height: 450px
+  border-radius: 8px
+  &::after
+    content: ""
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    z-index: 10
+.slider
+  width: 728px
+  &-button
+    width: 30px
+    height: 30px
+    border: none
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 99
+    cursor: pointer
+    background-color: transparent
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    &:focus
+      outline: none
+    &:active
+      outline: none 
+    &--next
+      background-image: url(../img/next.svg)
+      right: 18px
+    &--prev
+      background-image: url(../img/prev.svg)
+      left: 18px
