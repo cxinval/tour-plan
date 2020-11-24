@@ -1,6 +1,7 @@
 var mySwiper = new Swiper(".swiper-container", {
   // Optional parameters
   loop: true,
+  width: 728, 
   // Navigation arrows
   navigation: {
     nextEl: ".slider-button--next",
@@ -9,7 +10,7 @@ var mySwiper = new Swiper(".swiper-container", {
   keyboard:{
     enabled:true,
     onlyInviewport:true,
-  }
+  },
 });
 
 
