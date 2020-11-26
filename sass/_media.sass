@@ -3,11 +3,11 @@
     max-width: 960px
   .slider
     max-width: 590px
-    height: 100% 
-  .swiper-container     
-    height: 450px 
+    height: 100%
+  .swiper-container
+    height: 450px
 @media (max-width: 992px)
-  .container
+  .container, .newsletter-wrapper
     max-width: 943px
     width: 96%
   .logo
@@ -38,7 +38,7 @@
     max-width: 100%
     border-radius: 8px
   .swiper-slide__img
-    height: 450px  
+    height: 450px
   .booking
     width: 340px
     flex-basis: 49%
@@ -67,7 +67,7 @@
         height: 1px
         background-color: $text-color
   .stars
-    flex-basis: content  
+    flex-basis: content
   .hotel
     &-name
       flex-basis: 100%
@@ -85,33 +85,50 @@
         margin-left: 0
     &-right
       flex-direction: column
-      min-height: 450px    
+      min-height: 450px
   .booking
     width: 100%
   #map
     width: 100%
   .swiper-container
-    height: 450px  
+    height: 450px
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      align-items: flex-start
 @media (max-width: 576px)
   .logo
-    width: 99px 
+    width: 99px
   .hotel
+    padding-bottom: 40px
     &__slider
       margin-bottom: 20px
   .slider
     height: 300px
   .swiper-slide
-    object-fit: cover  
+    object-fit: cover
   .swiper-slide__img
-    height: 300px 
+    height: 300px
   .swiper-container
-    height: 100%         
+    height: 100%
+  .newsletter
+    padding: 76px 0 83px 0  
+  .newsletter__subscribe
+    width: 100%
+
+  .newsletter-title__strong
+    font-weight: 600
+    font-size: 30px
+    line-height: 38px
+  .newsletter-title
+    font-weight: 300
+    font-size: 20px
+    line-height: 25px
+    margin-bottom: 5px
 @media (max-width: 320px)
   .slider
     height: 227px
   .swiper-slide
-    object-fit: cover  
+    object-fit: cover
   .swiper-slide__img
-    height: 227px 
-
-  
+    height: 227px
