@@ -32,13 +32,10 @@
       flex-direction: column
     &__slider
       margin-bottom: 30px
+      max-width: 100%
     &-right
       flex-direction: row
-  .slider
-    max-width: 100%
-    border-radius: 8px
-  .swiper-slide__img
-    height: 450px
+      margin-left: 0
   .booking
     width: 340px
     flex-basis: 49%
@@ -46,6 +43,12 @@
     flex-basis: 49%
     width: 340px
     overflow: hidden
+
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+
 @media (max-width: 728px)
   .navbar
     &__search, &-menu, &__user
@@ -96,6 +99,33 @@
     &-wrapper
       flex-direction: column
       align-items: flex-start
+  .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+      max-width: 487px 
+      margin: 0 auto 50px auto 
+    &-slider     
+    
+      &__text
+        max-width: 455px
+      &__item
+        padding: 0 30px 30px
+        max-width: 550px
+        &::after,
+        &::before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -65px
+        &--next
+          right: 50%
+          transform: translate(50%, 0)
+          margin-right: -65px
+         
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -103,16 +133,13 @@
     padding-bottom: 40px
     &__slider
       margin-bottom: 20px
-  .slider
-    height: 300px
+      height: 250px
   .swiper-slide
     object-fit: cover
   .swiper-slide__img
     height: 300px
-  .swiper-container
-    height: 100%
   .newsletter
-    padding: 76px 0 83px 0  
+    padding: 76px 0 83px 0
   .newsletter__subscribe
     width: 100%
 
@@ -125,6 +152,16 @@
     font-size: 20px
     line-height: 25px
     margin-bottom: 5px
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin: 0 auto 42px 
+      max-width: 245px   
+    &-slider
+        &__item
+          padding: 0 20px 50px 20px
+          max-width: 281px  
 @media (max-width: 320px)
   .slider
     height: 227px

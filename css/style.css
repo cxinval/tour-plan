@@ -590,6 +590,7 @@ template {
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
+  margin-left: 3%;
 }
 
 .hotel-slider {
@@ -973,7 +974,7 @@ template {
   height: 47px;
   position: absolute;
   left: 62px;
-  top: 13px;
+  top: 0;
 }
 
 .reviews-slider__button {
@@ -1118,19 +1119,14 @@ template {
   }
   .hotel__slider {
     margin-bottom: 30px;
+    max-width: 100%;
   }
   .hotel-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  .slider {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  .swiper-slide__img {
-    height: 450px;
+    margin-left: 0;
   }
   .booking {
     width: 340px;
@@ -1142,6 +1138,9 @@ template {
         flex-basis: 49%;
     width: 340px;
     overflow: hidden;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1228,6 +1227,37 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    max-width: 487px;
+    margin: 0 auto 50px auto;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+    max-width: 550px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-left: -65px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    margin-right: -65px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1239,9 +1269,7 @@ template {
   }
   .hotel__slider {
     margin-bottom: 20px;
-  }
-  .slider {
-    height: 300px;
+    height: 250px;
   }
   .swiper-slide {
     -o-object-fit: cover;
@@ -1249,9 +1277,6 @@ template {
   }
   .swiper-slide__img {
     height: 300px;
-  }
-  .swiper-container {
-    height: 100%;
   }
   .newsletter {
     padding: 76px 0 83px 0;
@@ -1269,6 +1294,16 @@ template {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 5px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 auto 42px;
+    max-width: 245px;
+  }
+  .reviews-slider__item {
+    padding: 0 20px 50px 20px;
+    max-width: 281px;
   }
 }
 
