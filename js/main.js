@@ -13,8 +13,6 @@ var hotelSlider = new Swiper(".hotel-slider", {
   },
 });
 
-
-
 var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   loop: false,
@@ -24,13 +22,6 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     prevEl: ".reviews-slider__button--prev",
   },
 });
-
-
-
-
-
-
-
 
 ymaps.ready(init);
 
@@ -44,19 +35,23 @@ function init() {
     {
       searchControlProvider: "yandex#search",
     }
-  );
-  myMap.geoObjects.add(
-    new ymaps.Placemark(
-      [41.039671, 28.966327],
-      {
-        balloonContent: "цвет <strong>воды пляжа бонди</strong>",
-      },
-      {
-        preset: "islands#icon",
-        iconColor: "#0095b6",
+    );
+    myMap.geoObjects.add(
+      new ymaps.Placemark(
+        [41.039671, 28.966327],
+        {
+          balloonContent: "цвет <strong>воды пляжа бонди</strong>",
+        },
+        {
+          preset: "islands#icon",
+          iconColor: "#0095b6",
+        }
+        )
+        );
       }
-    )
-  );
-}
+      
 
 
+  
+      
+      

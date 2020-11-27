@@ -1,10 +1,16 @@
+.parallax-window
+  min-height: 400px
+  background: transparent
+
 .newsletter
   position: relative
   padding: 98px 0 87px 0
-  background-image: url(../img/newsletter__bg.jpg)
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
+  min-height: 260px
+  // background-image: url(../img/newsletter__bg.jpg)
+  // background-repeat: no-repeat
+  // background-size: 100%
+  // background-position: center
+  background: transparent
   &::before
     content: ""
     position: absolute
@@ -20,7 +26,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    max-width: 731px 
+    max-width: 731px
     margin: auto
   &-title
     color: $light
@@ -41,16 +47,16 @@
   border-radius: 4px
   overflow: hidden
   &__input
-     height: 100%
-     width: 100%
-     position: absolute
-     padding-left: 33px
-     padding-right: 75px 
-     border: none
-     font-style: normal
-     font-weight: 300
-     font-size: 14px
-     line-height: 18px    
+    height: 100%
+    width: 100%
+    position: absolute
+    padding-left: 33px
+    padding-right: 75px
+    border: none
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 18px
   &__button
     position: absolute
     min-width: 65px
@@ -60,4 +66,3 @@
     border: none
     background-color: $primary
     color: $light
-
