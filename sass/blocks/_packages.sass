@@ -1,0 +1,146 @@
+.packages
+  padding: 40px 0 70px 0
+  &__title
+    text-align: center
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    color: $dark
+    margin-bottom: 65px
+    margin-top: 0
+  &-items
+    display: grid
+    grid-template-columns: 350px 350px 350px
+    grid-template-rows: repeat(2, 500px)
+    grid-gap: 30px
+
+  &-big
+    width: 730px
+    display: grid
+    grid-template-columns: 366px 364px
+    grid-column: 1/ span 2
+    overflow: hidden
+    border-radius: 8px
+    position: relative
+    &__wrap
+      margin-bottom: 37px !important
+    &__img
+      width: 366px !important
+      max-height: 500px !important
+      object-fit: cover
+      overflow: hidden
+    &__info
+      min-width: 364px
+  &-info
+    width: 350px
+    display: flex
+    flex-direction: column
+    background-color: $dark
+    padding: 16px 21px 30px 44px
+    &__wrap
+      display: flex
+      flex-direction: column
+      margin-bottom: 24px
+    &__border
+      border-radius: 0 0 8px 8px
+    &__rating
+      margin-bottom: 5px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      color: $light
+      margin-bottom: 27px
+      margin-top: 0
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+      color: $light
+      margin-bottom: 34px
+      margin-top: 0
+    &-nomoney
+      position: relative
+      max-width: 58px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      color: $light
+      margin-bottom: 5px
+      margin-top: 0
+      &::after
+        content: ""
+        width: 100%
+        height: 1px
+        background-color: $light
+        position: absolute
+        top: 50%
+        left: 0
+        right: 0
+    &-footer
+      display: grid
+      grid-template-columns: 85px 120px
+      grid-template-rows: 40px
+      align-items: center
+      justify-content: space-between
+    &__price
+      white-space: nowrap
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+      color: $light
+    &__button
+      border: none
+      white-space: nowrap
+      background-color: $primary
+      color: $light
+      padding: 11px 27px 11px 27px
+      border-radius: 4px
+      cursor: pointer
+  &-item
+    display: grid
+    grid-template-columns: 350px
+    grid-template-rows: 250px 250px
+    position: relative
+    &__img
+      width: 350px
+      height: 250px
+      object-fit: cover
+      order: -1
+      border-radius: 8px 8px 0 0
+      overflow: hidden
+    &__marker
+      position: absolute
+      top: 26px
+      left: 0
+      padding: 4px 9px
+      border-radius: 0 4px 4px 0
+      background-color: $primary
+      color: $light
+      text-align: center
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+    &__title
+      margin-bottom: 23px
+  &-information
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin-bottom: 11px
+      
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      margin-left: 14px
