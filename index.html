@@ -8,12 +8,14 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,600&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
         <div class="container">
             <div class="navbar-top">
                 <a href="#" class="logo">
@@ -185,159 +187,41 @@
         <div class="container packages-container">
             <h2 class="packages__title">Other Packages</h2>
             <div class="packages-items">
-                <div class="packages-big">
-                    <img class="packages-big__img" src="img/packages__item1.jpg" alt="">
-                    <span class="packages-big__marker packages-item__marker">Flash Offer</span>
-                    <div class="packages-big__info packages-info">
-                        <div class="packages-info__rating">
+                <div class="package-item packages-big">
+                    <img src="img/packages__item1.jpg" alt="" class="packages-big__img">
+                    <div class="packages-big-info">
+                        <div class="packages-big-stars">
                             <img src="img/Star.svg" alt="star">
                             <img src="img/Star.svg" alt="star">
                             <img src="img/Star.svg" alt="star">
                             <img src="img/Star.svg" alt="star">
                             <img src="img/Star.svg" alt="star">
                         </div>
-                        <h2 class="packages-info__title packages-big__title">Hotel Blue Haven</h2>
-                        <p class="packages-info__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
-                            enim laborum
-                            magna llit. Ipsum est fugiat velit ea
+                        <h3 class="packages-big-info__title item-info__title">Hotel Blue Haven</h3>
+                        <p class="packages-big-info__text">Aute quis duis excepteur excepteur ipsum cat eiusmod
+                            consectetur enim laborum magna llit. Ipsum est fugiat velit ea
                             llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat
-                            eiusmod
-                            nsectetur enim
+                            eiusmod nsectetur enim
                             laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
-                        <div class="packages-info__wrap packages-big__wrap">
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/maps.svg" alt="">
-                                <span class="packages-information__text">1749 Wheeler Ridge Delaware</span>
-                            </div>
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/user.svg" alt="">
-                                <span class="packages-information__text">2 x Guests</span>
-                            </div>
-                            <div class="packages-information packages-item__info">
-                                <img class="packages-information__icon" src="img/home.svg" alt="">
-                                <span class="packages-information__text">1 x Room</span>
-                            </div>
+                        <div class="packages-item-gid">
+                            <img src="img/maps.svg" alt="" class="packages-item-gid__icon">
+                            <span class="packages-item-gid__text">1749 Wheeler Ridge Delaware</span>
                         </div>
-                        <div class="packages-info-nomoney">
-                            $ 10,500
+                        <div class="packages-item-gid">
+                            <img src="img/user.svg" alt="" class="packages-item-gid__icon">
+                            <span class="packages-item-gid__text">2 x Guests</span>
                         </div>
-                        <div class="packages-info-footer packages-big-footer">
-                            <div class="packages-info__price packages-big-nomoney">$ 8,500</div>
-                            <button class="packages-info__button packages-big__button">Book Now</button>
+                        <div class="packages-item-gid">
+                            <img src="img/home.svg" alt="" class="packages-item-gid__icon">
+                            <span class="packages-item-gid__text">1 x Room</span>
+                        </div>
+                        <span class="packages-item__nomone">$ 10,500</span>
+                        <div class="packages-item-buttons">
+                            <div class="packages-item__price">$ 8,500</div>
+                            <div class="packages-item__buttons">Book Now</div>
                         </div>
                     </div>
-                </div>
-                <div class="packages-item">
-                    <img class="packages-item__img" src="img/packages__item2.jpg" alt="">
-                    <span class="packages-item__marker">Flash Offer</span>
-                    <div class="packages-info packages-info__border">
-                        <h2 class="packages-info__title packages-item__title">LUX* Belle Mare</h2>
-                        <div class="packages-info__wrap">
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/maps.svg" alt="">
-                                <span class="packages-information__text">1749 Wheeler Ridge Delaware</span>
-                            </div>
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/user.svg" alt="">
-                                <span class="packages-information__text">2 x Guests</span>
-                            </div>
-                            <div class="packages-information packages-item__info">
-                                <img class="packages-information__icon" src="img/home.svg" alt="">
-                                <span class="packages-information__text">1 x Room</span>
-                            </div>
-                        </div>
-                        <p class="packages-info-nomoney">
-                            $ 10,500
-                        </p>
-                        <div class="packages-info-footer">
-                            <span class="packages-info__price packages-item-nomoney">$ 9,500</span>
-                            <button class="packages-info__button packages-item-nomoney">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="packages-item">
-                    <img class="packages-item__img" src="img/packages__item3.jpg" alt="">
-                    <span class="packages-item__marker">Flash Offer</span>
-                    <div class="packages-info packages-info__border">
-                        <h2 class="packages-info__title packages-item__title">White Palace</h2>
-                        <div class="packages-info__wrap">
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/maps.svg" alt="">
-                                <span class="packages-information__text">1749 Wheeler Ridge Delaware</span>
-                            </div>
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/user.svg" alt="">
-                                <span class="packages-information__text">2 x Guests</span>
-                            </div>
-                            <div class="packages-information packages-item__info">
-                                <img class="packages-information__icon" src="img/home.svg" alt="">
-                                <span class="packages-information__text">1 x Room</span>
-                            </div>
-                        </div>
-                        <p class="packages-info-nomoney" style="max-width: 49px;">
-                            $ 4,500
-                        </p>
-                        <div class="packages-info-footer">
-                            <span class="packages-info__price packages-item-nomoney">$ 2,500</span>
-                            <button class="packages-info__button packages-item-nomoney">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="packages-item">
-                    <img class="packages-item__img" src="img/packages__item4.jpg" alt="">
-                    <span class="packages-item__marker">Flash Offer</span>
-                    <div class="packages-info packages-info__border">
-                        <h2 class="packages-info__title packages-item__title">Luxury Place</h2>
-                        <div class="packages-info__wrap packages-big__wrap">
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/maps.svg" alt="">
-                                <span class="packages-information__text">1749 Wheeler Ridge Delaware</span>
-                            </div>
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/user.svg" alt="">
-                                <span class="packages-information__text">2 x Guests</span>
-                            </div>
-                            <div class="packages-information packages-item__info">
-                                <img class="packages-information__icon" src="img/home.svg" alt="">
-                                <span class="packages-information__text">1 x Room</span>
-                            </div>
-                        </div>
-                        <p class="packages-info-nomoney" style="max-width: 49px;">
-                            $ 6,500
-                        </p>
-                        <div class="packages-info-footer">
-                            <span class="packages-info__price packages-item-nomoney">$ 3,500</span>
-                            <button class="packages-info__button packages-item-nomoney">Book Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="packages-item">
-                    <img class="packages-item__img" src="img/packages__item5.jpg" alt="">
-                    <span class="packages-item__marker">Flash Offer</span>
-                    <div class="packages-info packages-info__border">
-                        <h2 class="packages-info__title packages-item__title">Hotel Five Star</h2>
-                        <div class="packages-info__wrap packages-big__wrap">
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/maps.svg" alt="">
-                                <span class="packages-information__text">1749 Wheeler Ridge Delaware</span>
-                            </div>
-                            <div class="packages-information">
-                                <img class="packages-information__icon" src="img/user.svg" alt="">
-                                <span class="packages-information__text">2 x Guests</span>
-                            </div>
-                            <div class="packages-information packages-item__info">
-                                <img class="packages-information__icon" src="img/home.svg" alt="">
-                                <span class="packages-information__text">1 x Room</span>
-                            </div>
-                        </div>
-                        <p class="packages-info-nomoney" style="max-width: 49px;">
-                            $ 8,500
-                        </p>
-                        <div class="packages-info-footer">
-                            <span class="packages-info__price packages-item-nomoney">$ 3,000</span>
-                            <button class="packages-info__button packages-item-nomoney">Book Now</button>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -546,13 +430,13 @@
                 <div class="footer__social-network">
                     <h3 class="footer__title footer__title--inline">Social Network</h3>
                     <div class="footer__social-links">
-                        <a href="#" class="footer__link">
+                        <a href="#" class="footer__link footer__link--mr-1">
                             <img src="img/facebook.svg" alt="">
                         </a>
-                        <a href="#" class="footer__link">
+                        <a href="#" class="footer__link footer__link--mr-1">
                             <img src="img/yt.svg" alt="">
                         </a>
-                        <a href="#" class="footer__link">
+                        <a href="#" class="footer__link footer__link--mr-1">
 
                             <img src="img/inst.svg" alt="">
                         </a>
@@ -589,15 +473,19 @@
                             <div class="footer__icon-wrapper">
                                 <img src="img/phone.svg" class="footer__icon" alt="">
                             </div>
-                            Tel (business hours) : 269 1500<br>
-                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-                            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                            <div class="footer__wrap-tel">
+                                <span>Tel (business hours) : <a href="#" class="footer__link">269 1500</a> </span>
+                                <span>Tel (hotline) Monday - Saturday: <a href="#" class="footer__link">52-56-61-38</a>
+                                    (08:00 am – 20:00 pm)</span>
+                                <span>(hotline) Sunday: <a href="#" class="footer__link">52-56-61-38</a> (08:00 am –
+                                    14:00 pm)</span>
+                            </div>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img src="img/mail.svg" class="footer__icon" alt="">
                             </div>
-                            cherly.lawson@example.com
+                            <a href="" class="footer__link">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
@@ -607,8 +495,11 @@
                         <input type="text" class="input footer__input" placeholder="Your Full Name*">
                         <input type="text" class="input footer__input" placeholder="Phone Number*">
                         <textarea cols="30" placeholder="Message" class="footer__message"></textarea>
-                        <button class="button footer__button">Send</button>
-                        <span class="footer__info">* Required Fields</span>
+                        <div class="footer__down">
+                            <button class="button footer__button">Send</button>
+                            <span class="footer__info">* Required Fields</span>
+                        </div>
+
                     </form>
                 </div>
             </div>

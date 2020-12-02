@@ -35,23 +35,21 @@ function init() {
     {
       searchControlProvider: "yandex#search",
     }
-    );
-    myMap.geoObjects.add(
-      new ymaps.Placemark(
-        [41.039671, 28.966327],
-        {
-          balloonContent: "цвет <strong>воды пляжа бонди</strong>",
-        },
-        {
-          preset: "islands#icon",
-          iconColor: "#0095b6",
-        }
-        )
-        );
+  );
+  myMap.geoObjects.add(
+    new ymaps.Placemark(
+      [41.039671, 28.966327],
+      {
+        balloonContent: "цвет <strong>воды пляжа бонди</strong>",
+      },
+      {
+        preset: "islands#icon",
+        iconColor: "#0095b6",
       }
-      
+    )
+  );
+}
 
-
-  
-      
-      
+$(".menu-button").click(function () {
+  $(".navbar__bottom").toggleClass("navbar__bottom-active");
+});
