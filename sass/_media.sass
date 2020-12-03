@@ -172,7 +172,7 @@
             display: block
     &__user
       flex-direction: column
-      align-items: center        
+      align-items: center
     &__bottom
       display: none
       position: fixed
@@ -180,7 +180,6 @@
       right: 0
       bottom: 0
       top: 78px
-      padding-top: 30px
       &-active
         display: flex
     &--mobile_fixed
@@ -194,7 +193,7 @@
       &--light
         color: $light
         margin-left: 0
-        margin-top: 10px    
+        margin-top: 10px
   .menu-button__line
     width: 16px
     height: 1px
@@ -400,6 +399,8 @@
     &-item
       &-buttons
         max-width: 262px
+  .search__input
+    width: 254px
 
 @media (max-width: 322px)
   .slider
@@ -421,3 +422,7 @@
         width: 68%
       &__wrap
         flex-direction: column
+  .footer__input
+    flex-basis: 94%
+  .footer__message
+    flex-basis: 94%
