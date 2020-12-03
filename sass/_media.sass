@@ -157,12 +157,22 @@
     padding: 0
     outline: none
   .navbar
-    // &__search, &__user
-    //   display: none
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
     &-menu
       flex-direction: column
       &__item
         margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
+    &__user
+      flex-direction: column
+      align-items: center        
     &__bottom
       display: none
       position: fixed
@@ -170,6 +180,7 @@
       right: 0
       bottom: 0
       top: 78px
+      padding-top: 30px
       &-active
         display: flex
     &--mobile_fixed
@@ -178,6 +189,12 @@
       right: 0
       top: 0
       z-index: 99999
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px    
   .menu-button__line
     width: 16px
     height: 1px
