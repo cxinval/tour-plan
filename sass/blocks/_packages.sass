@@ -14,10 +14,10 @@
     display: grid
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: repeat(2, 500px)
+    grid-gap: 30px
   &-big
     display: flex
     grid-column: span 2
-    
     &__img
       height: 500px
       min-width: 366px
@@ -36,54 +36,76 @@
       line-height: 160.6%
       color: #FFFFFF
       margin-bottom: 34px
-  &-item-gid
+  &-item 
+    height: 500px
     display: flex
-    align-items: center
-    &:not(:last-child)
-      margin-bottom: 11px
-  &-item-gid__icon
-    margin-right: 14px
-  &-item-gid__text
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    color: #FFFFFF
-  &-item__nomone
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 18px
-    text-decoration-line: line-through
-    color: #FFFFFF
+    flex-direction: column
+    &__img
+      border-radius: 8px 8px 0 0
+      max-width: 350px
+      min-height: 250px
+      object-fit: cover
+    &__info
+      margin-right: 0
+      background-color: #0A223D 
+      max-width: 350px
+      min-height: 250px 
+      padding: 30px 21px 25px 32px
+      border-radius: 0 0 8px 8px
+    &-gid
+      display: flex
+      align-items: center
+      &:not(:last-child)
+        margin-bottom: 11px
+    &-gid__icon
+      margin-right: 14px
+    &-gid__text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #FFFFFF
+    &__nomone
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+      color: #FFFFFF
 
-  &-item-buttons
-    margin-top: 5px
-    display: flex
-    max-width: 297px
-    align-items: center
-    justify-content: space-between
-  &-item__price
-    font-style: normal
-    font-weight: bold
-    font-size: 24px
-    line-height: 30px
-    color: #FFFFFF
-  &-item__buttons
-    background: #EC1F46
-    border-radius: 4px
-    font-style: normal
-    font-weight: 600
-    font-size: 14px
-    line-height: 19px
-    color: #FFFFFF
-    padding: 11px 27px
-
-
-.item-info__title
+    &-buttons
+      margin-top: 5px
+      display: flex
+      max-width: 297px
+      align-items: center
+      justify-content: space-between
+    &__price
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+      color: #FFFFFF
+    &__buttons
+      background: #EC1F46
+      border-radius: 4px
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      color: #FFFFFF
+      padding: 11px 27px
+.packages-big-info__title
   font-style: normal
   font-weight: bold
   font-size: 18px
   line-height: 23px
   color: #FFFFFF
   margin-bottom: 27px
+.item-info__title
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 23px
+  color: #FFFFFF
+  margin-top: 0
+

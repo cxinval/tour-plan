@@ -11,36 +11,17 @@
     height: 230px
   .packages
     &-items
-      grid-template-columns: 300px 300px 300px
-      grid-template-rows: repeat(2, 460px)
+      grid-template-columns: repeat(3, 300px)
+      grid-template-rows: repeat(2, 500px)
     &-big
       width: 630px
       grid-template-columns: 322px 324px
+      &__img
+        min-width: 289px
       &__info
         padding-left: 20px
       &__wrap
         margin-bottom: 14px !important
-    &-info
-      max-width: 300px
-      &-footer
-        display: flex
-        justify-content: initial
-      &__title
-        margin-bottom: 15px
-      &__text
-        margin-bottom: 25px
-
-      &__price
-        margin-right: 17%
-      &__wrap
-        margin-bottom: 10px
-    &-item
-      grid-template-columns: 300px
-      grid-template-rows: 230px 230px
-      &__img
-        max-width: 300px
-      &__info
-        margin-bottom: 11px !important
   .footer
     &__input
       flex-basis: 100%
@@ -97,21 +78,28 @@
   .packages
     &-items
       grid-template-columns: repeat(2, 1fr)
-      grid-template-rows: repeat(2, 1fr)
+      grid-template-rows: 400px 500px 500px
     &-big
       width: 100%
       height: 400px
+      grid-column: span 2
       grid-template-columns: 50% 50%
       &__img
-        min-width: 100%
-    &-info
-      min-width: 100%
-      &__wrap
-        flex-direction: row
-        flex-wrap: wrap
+        min-width: 401px
+        max-height: 100%
+      &-info
+        padding: 24px 33px 20px 44px
+        &__title
+          margin-bottom: 12px
+        &__text
+          max-height: 120px
+          font-size: 12px
     &-item
       grid-template-columns: 1fr
       grid-template-rows: 200px 200px
+      &__info
+        min-width: 100%
+
       &__img
         min-width: 100% !important
         max-height: 200px
@@ -157,37 +145,37 @@
   body
     padding-top: 78px
   .navbar-top__menu-button
-        display: flex
-        width: 16px
-        height: 11px
-        align-items: center
-        justify-content: space-between
-        flex-direction: column
-        border: none
-        background-color: #fff
-        cursor: pointer
-        padding: 0
-        outline: none
-  .navbar  
+    display: flex
+    width: 16px
+    height: 11px
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: #fff
+    cursor: pointer
+    padding: 0
+    outline: none
+  .navbar
     // &__search, &__user
     //   display: none
     &-menu
       flex-direction: column
       &__item
-        margin-bottom: 20px  
+        margin-bottom: 20px
     &__bottom
       display: none
-      position: fixed  
+      position: fixed
       left: 0
       right: 0
       bottom: 0
       top: 78px
       &-active
         display: flex
-    &--mobile_fixed 
+    &--mobile_fixed
       position: fixed
       left: 0
-      right: 0 
+      right: 0
       top: 0
       z-index: 99999
   .menu-button__line
@@ -261,35 +249,31 @@
     padding-bottom: 60px
   .packages
     &-items
-      grid-template-rows: repeat(2, 340px)
+      display: grid
+      grid-template-columns: 50%
+      grid-template-rows: repeat(5, 1fr)
+      grid-row-gap: 20px
+      grid-column-gap: 0
+
     &-big
-      width: 100%
-      height: 340px
-      grid-template-columns: 50% 50%
+      flex-direction: column
+      min-width: 100%
+      max-height: 250px
       &__img
         min-width: 100%
-    &-info
-      width: 100%
-      padding-top: 8px
-      &__title
-        font-size: 14px
-        line-height: 19px
-      &__text
-        font-size: 12px
-        margin-bottom: 15px
-        line-height: 145.6%
-      &-nomoney
-        line-height: 8px
+        min-height: 100%
+        border-radius: 8px 8px 0 0
+      &-info
+        padding-top: 18px
+        padding-bottom: 5px
+        border-radius: 0 0 8px 8px
+        min-width: 100%
+        min-height: 251px
+        &__text
+          display: none
     &-item
-      grid-template-columns: 1fr
-      grid-template-rows: 170px 170px
-      &__img
-        min-width: 100% !important
-        max-height: 170px
-    &-information
-      &__text
-        font-size: 10px
-        line-height: 11px
+      grid-column: span 2
+
   .footer
     &-wrapper
       grid-column-gap: 30px
@@ -334,34 +318,10 @@
   .card
     flex-basis: 100%
   .packages
-    &-items
-      grid-template-columns: 100%
-      grid-template-rows: repeat(5, 360px)
-      grid-column-gap: 0
-    &-big
-      height: 360px
-      grid-template-columns: 35% 65%
-      &__info
-        padding-left: 9px
-      &__img
-        min-width: 100%
-        min-height: 100%
-    &-info
-      padding-top: 24px
-      min-width: 100%
-      &__title
-        font-size: 18px
-        line-height: 23px
-
-      &__price
-        margin-right: 15%
     &-item
-      grid-column-start: 1
-      grid-template-columns: 100%
-      grid-template-rows: 180px 180px
-      &__img
-        min-width: 100% !important
-        max-height: 180px
+      &-buttons
+        max-width: 269px
+
   .footer
     &-wrapper
       grid-template-columns: 1fr
@@ -372,7 +332,7 @@
     &__social
       &-network
         display: flex
-        flex-direction: column 
+        flex-direction: column
         grid-row: 2
         grid-column: 1
         align-self: center
@@ -402,51 +362,27 @@
       align-items: flex-start
     &__button
       order: 2
-    &__info 
+    &__info
       order: 1
-      margin-bottom: 15px     
+      margin-bottom: 15px
     &__title
       font-size: 14px
-    &__information-wrap 
+    &__information-wrap
       flex-direction: column
       align-items: start
       min-width: 100%
     &__information-links
-      margin-bottom: 20px 
-       
+      margin-bottom: 20px
 
 @media (max-width: 416px)
   .packages
+    grid-template-columns: 250px
     &-big
-      &__title
-        margin-bottom: 5px
-      &-nomoney
-        line-height: 23px
-        font-size: 18px
-      &__info
-        padding-top: 10px
-        padding-left: 9px
-      &__text
-        line-height: 118.6% !important
-        margin-bottom: 15px !important
-      &__wrap
-        margin-bottom: 3px !important
-      &-footer
-        margin-top: 10px
-        flex-direction: column
-        align-items: flex-start
-      &__button
-        margin-top: 3px
-        width: 100%
-
-    &-info
-      &__rating
-        display: none
-      &__text
-        line-height: 118.6% !important
-        margin-bottom: 15px !important
-      &-nomoney
-        line-height: 2px
+      &-info
+        padding: 20px 0px 35px 20px
+    &-item
+      &-buttons
+        max-width: 262px
 
 @media (max-width: 322px)
   .slider
@@ -462,7 +398,6 @@
       &__text
         max-width: 185px
         margin-bottom: 3px !important
-
     &-big
       &__button
         margin-top: 3px
