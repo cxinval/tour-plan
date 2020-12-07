@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan - Hotel Booking</title>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,600&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,7 +20,7 @@
                 <a href="#" class="logo">
                     <img src="img/logo__horizont.svg" alt="logo: Best Tour Plan" class="logo__image">
                 </a>
-                <form action="" class="search navbar__search navbar__search--mobile_hidden">
+                <form action="#" class="search navbar__search navbar__search--mobile_hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/search.svg" alt="icon:search">
@@ -51,7 +50,7 @@
                         </a>
                     </li>
                     <li class="navbar-menu__item navbar-menu__item--mobile_visible">
-                        <form action="" class="search navbar__search navbar__user--mobile_visible">
+                        <form action="#" class="search navbar__search navbar__user--mobile_visible">
                             <input type="text" class="search__input" placeholder="Search Location">
                             <button class="search__button">
                                 <img src="img/search.svg" alt="icon:search">
@@ -121,7 +120,7 @@
                         Activities + Child Stays Free</p>
                 </div>
                 <!-- /.hotel-info__left -->
-                <div class="rating hotel-info__rating">
+                <div data-toggle="modal" class="rating hotel-info__rating">
                     <span class="rating__text">User Rattings</span>
                     <span class="rating__counter">4.5/5</span>
                 </div>
@@ -187,7 +186,7 @@
                             </a>
                         </div>
                         <!-- /.call-center -->
-                        <button class="button booking__buttom">View Other Options</button>
+                        <button data-toggle="modal" class="button booking__buttom">View Other Options</button>
                     </div>
                     <!-- /.booking -->
                     <div id="map"></div>
@@ -342,8 +341,8 @@
             <h2 class="newsletter-title">subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address">
+            <form action="sen.php" method="POST" class="subscribe newsletter__subscribe" >
+                <input value="mail" class="subscribe__input"  placeholder="Your email address" name="mail">
                 <button class="subscribe__button">
                     send
                 </button>
@@ -582,10 +581,10 @@
                                 <img src="img/phone.svg" class="footer__icon" alt="">
                             </div>
                             <div class="footer__wrap-tel">
-                                <span>Tel (business hours) : <a href="#" type="tel" class="footer__link">269 1500</a> </span>
-                                <span>Tel (hotline) Monday - Saturday: <a href="#" type="tel" class="footer__link">52-56-61-38</a>
+                                <span>Tel (business hours) : <a href="#" class="footer__link">269 1500</a> </span>
+                                <span>Tel (hotline) Monday - Saturday: <a href="#" class="footer__link">52-56-61-38</a>
                                     (08:00 am – 20:00 pm)</span>
-                                <span>(hotline) Sunday: <a href="#" type="tel" class="footer__link">52-56-61-38</a> (08:00 am –
+                                <span>(hotline) Sunday: <a href="#" class="footer__link">52-56-61-38</a> (08:00 am –
                                     14:00 pm)</span>
                             </div>
                         </li>
@@ -593,16 +592,16 @@
                             <div class="footer__icon-wrapper">
                                 <img src="img/mail.svg" class="footer__icon" alt="">
                             </div>
-                            <a href="#" type="mail" class="footer__link">cherly.lawson@example.com</a>
+                            <a href="#" class="footer__link">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__contacts-form">
                     <h3 class="footer__title">Send us a message</h3>
-                    <form action="" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea cols="30" placeholder="Message" class="footer__message"></textarea>
+                    <form action="sen.php" method="POST" class="footer__form" >
+                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" >
+                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+                        <textarea placeholder="Message" class="message footer__message" name="message"></textarea>
                         <div class="footer__down">
                             <button class="button footer__button">Send</button>
                             <span class="footer__info">* Required Fields</span>
@@ -622,7 +621,30 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="">
+            </a>
+            <h3 class="modal__title">Send us a message</h3>
+            <form action="sen.php" method="POST" class="modal__form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+                <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+                <textarea placeholder="Message" class="message modal__message" name="message"></textarea>
+                <div class="modal__down">
+                    <button class="button modal__button">Send</button>
+                    <span class="modal__info">* Required Fields</span>
+                </div>
+            
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
