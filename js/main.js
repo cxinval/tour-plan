@@ -57,14 +57,39 @@ $(".menu-button").click(function () {
 });
 
 var modalButton = $("[data-toggle=modal]");
+var closeModalButton = $(".modal__close");
+
 
 modalButton.on("click", openModal);
+closeModalButton.on("click", closeModal)
+
 function openModal() {
+  var targetModal = $(this).attr("data-href");
+  $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+  $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+  var modalOverlay = $(".modaloverlay");
+  var modalDialog = $(".modaldialog");
+};
+
+
+function closeModal(event) {
+  event.preventDefault();
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");
-  modalOverlay.addClass("modal__overlay--visible");
-  modalDialog.addClass("modal__dialog--visible"); 
+  modalOverlay.removeClass("modal__overlay--visible");
+  modalDialog.removeClass("modal__dialog--visible");
 };
+
+var modalOverlay = $(".modal__overlay");
+var modalDialog = $(".modal__dialog");
+
+$(document).keydown(function (event) {
+  if (event.keyCode == 27) {
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+});
+
 });
 
 
