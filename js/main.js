@@ -57,7 +57,7 @@ $(".menu-button").click(function () {
 });
 
 var modalButton = $("[data-toggle=modal]");
-modalButton.on(".click", openModal);
+modalButton.on("click", openModal);
 
 function openModal() {
   var modalOverlay = $(".modal__overlay");
