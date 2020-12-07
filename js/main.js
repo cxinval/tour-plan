@@ -57,13 +57,19 @@ $(".menu-button").click(function () {
 });
 
 var modalButton = $("[data-toggle=modal]");
-modalButton.on("click", openModal);
 
+modalButton.on("click", openModal);
 function openModal() {
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");
-  modalOverlay.addclass("modal__overlay--visible");
-  modalDialog.addclass("modal__dialog--visible"); 
+  modalOverlay.addClass("modal__overlay--visible");
+  modalDialog.addClass("modal__dialog--visible"); 
 };
 });
+
+
+
+
+
+
 

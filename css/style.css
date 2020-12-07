@@ -77,6 +77,7 @@ img {
 }
 
 .button {
+  cursor: pointer;
   min-width: 160px;
   min-height: 50px;
   padding: 18px;
@@ -88,6 +89,7 @@ img {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  text-align: center;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1386,6 +1388,7 @@ template {
 
 .packages-item__buttons {
   background: #EC1F46;
+  min-height: 40px;
   border-radius: 4px;
   font-style: normal;
   font-weight: 600;
