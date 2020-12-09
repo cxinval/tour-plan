@@ -1753,6 +1753,7 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  margin-top: 0;
   margin-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -2420,52 +2421,14 @@ template {
     margin-left: 0;
   }
   .modal__dialog {
-    max-height: 424px;
-    max-width: 286px;
+    width: 100%;
+  }
+}
+
+@media (max-height: 480) {
+  .modal__diaog {
     overflow-y: scroll;
-  }
-}
-
-@media (max-height: 630px) {
-  .modal__dialog {
-    margin-top: 100px;
-    overflow: scroll;
-  }
-}
-
-@media (max-height: 503px) {
-  .modal__dialog {
-    margin-top: 90px;
-  }
-}
-
-@media (max-height: 486px) {
-  .modal__dialog {
-    margin-top: 100px;
-  }
-}
-
-@media (max-height: 465px) {
-  .modal__dialog {
-    margin-top: 110px;
-  }
-}
-
-@media (max-height: 465px) {
-  .modal__dialog {
-    margin-top: 130px;
-  }
-}
-
-@media (max-height: 465px) {
-  .modal__dialog {
-    margin-top: 150px;
-  }
-}
-
-@media (max-height: 368px) {
-  .modal__dialog {
-    margin-top: 170px;
+    top: 71%;
   }
 }
 /*# sourceMappingURL=style.css.map */
