@@ -16,7 +16,7 @@
       visibility: visible
       opacity: 1
   &__dialog
-    max-height: 487px
+    
     position: fixed
     top: 50%
     left: 50%
@@ -25,11 +25,12 @@
     color: $light
     border-radius: 8px
     z-index: 101
-    max-width: 478px
+    max-width: 494px
     transform: translate(-50%, -50%)
     visibility: hidden
     opacity: 0
     transition: opacity 0.5s
+    
     &--visible
       visibility: visible
       opacity: 1
@@ -52,6 +53,7 @@
     font-size: 12px
     line-height: 15px
     color: $footer-info
+    white-space: nowrap
   &__title
     white-space: nowrap
     font-style: normal
@@ -62,3 +64,12 @@
     margin-bottom: 15px
     text-align: center
     text-transform: uppercase      
+  &__button  
+    max-width: 160px
+    width: 100%
+    min-height: 50px
+  &__down
+    
+    display: flex
+    align-items: center
+    justify-content: space-between  

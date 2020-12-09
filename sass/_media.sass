@@ -140,6 +140,8 @@
         grid-row: 4
     &__title
       font-size: 14px
+  .modal__info  
+    font-size: 9px  
 
 @media (max-width: 728px)
   body
@@ -187,7 +189,7 @@
       left: 0
       right: 0
       top: 0
-      z-index: 99999
+      z-index: 99
   .user
     &__name
       &--light
@@ -443,8 +445,8 @@
   .modal__dialog
     width: 100%
     
-@media (max-height: 480) 
-  .modal__diaog
-    overflow-y: scroll 
-    top: 71% 
+@media (max-height: 489px) 
+  .modal__dialog
+    overflow-y: auto 
+    height: 98vh
 

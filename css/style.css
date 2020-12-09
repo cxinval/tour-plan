@@ -1697,7 +1697,6 @@ template {
 }
 
 .modal__dialog {
-  max-height: 487px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1706,7 +1705,7 @@ template {
   color: #ffffff;
   border-radius: 8px;
   z-index: 101;
-  max-width: 478px;
+  max-width: 494px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   visibility: hidden;
@@ -1745,6 +1744,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  white-space: nowrap;
 }
 
 .modal__title {
@@ -1757,6 +1757,24 @@ template {
   margin-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.modal__button {
+  max-width: 160px;
+  width: 100%;
+  min-height: 50px;
+}
+
+.modal__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1200px) {
@@ -1965,6 +1983,9 @@ template {
   .footer__title {
     font-size: 14px;
   }
+  .modal__info {
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 728px) {
@@ -2040,7 +2061,7 @@ template {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 99999;
+    z-index: 99;
   }
   .user__name--light {
     color: #ffffff;
@@ -2425,10 +2446,10 @@ template {
   }
 }
 
-@media (max-height: 480) {
-  .modal__diaog {
-    overflow-y: scroll;
-    top: 71%;
+@media (max-height: 489px) {
+  .modal__dialog {
+    overflow-y: auto;
+    height: 98vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
