@@ -596,11 +596,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__contacts-form">
+                <div class="footer__contacts-form ">
                     <h3 class="footer__title">Send us a message</h3>
-                    <form action="sen.php" method="POST" class="footer__form" >
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" >
-                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+                    <form action="sen.php" method="POST" class="footer__form form" >
+                        <div class="footer__input-grup">
+                            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+                        </div>
+                        <div class="footer__input-grup">
+                            <input type="tel" class="input footer__input modal__number" placeholder="Phone Number*" name="phone" required minlength="6">
+                        </div>
                         <textarea placeholder="Message" class="message footer__message" name="message"></textarea>
                         <div class="footer__down">
                             <button class="button footer__button">Send</button>
@@ -630,10 +634,11 @@
                 <img src="img/close.svg" alt="">
             </a>
             <h3 class="modal__title">Booking</h3>
-            <form action="sen.php" method="POST" class="modal__form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-                <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-                <input type="text" class="input modal__input" placeholder="Email*" name="Email">
+            <form action="sen.php" method="POST" class="modal__form form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+                
+                <input type="tel" class="input modal__input modal__number" placeholder="Phone Number*" name="phone" minlength="6" required>
+                <input type="email" class="input modal__input" placeholder="Email*" name="mail" required minlength="2">
                 <textarea placeholder="Message" class="message modal__message" name="message"></textarea>
                 <div class="modal__down">
                     <button class="button modal__button">Send</button>
@@ -653,10 +658,10 @@
                 <img src="img/close.svg" alt="">
             </a>
             <h3 class="modal__title">Rating</h3>
-            <form action="sen.php" method="POST" class="modal__form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-                <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-                <input type="text" class="input modal__input" placeholder="Email*" name="Email">
+            <form action="sen.php" method="POST" class="modal__form form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+                <input type="tel"  class="input modal__input modal__number" placeholder="Phone Number*" name="phone" required minlength="6">
+                <input type="email" class="input modal__input" placeholder="Email*" name="Email" required>
                 <textarea placeholder="Message" class="message modal__message" name="message"></textarea>
                 <div class="modal__down">
                     <button class="button modal__button">Send</button>
@@ -672,6 +677,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

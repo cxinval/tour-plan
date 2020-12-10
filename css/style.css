@@ -1588,7 +1588,12 @@ template {
 }
 
 .footer__input {
-  margin-bottom: 15px;
+  width: 100%;
+}
+
+.footer__input-grup {
+  max-height: 50px;
+  margin-bottom: 20px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
@@ -1729,13 +1734,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__message__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1766,6 +1775,7 @@ template {
 }
 
 .modal__down {
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1775,6 +1785,10 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.invalid {
+  font-size: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -1812,7 +1826,7 @@ template {
   .packages-big__wrap {
     margin-bottom: 14px !important;
   }
-  .footer__input {
+  .footer__input-grup {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1938,7 +1952,7 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
+  .footer__input-grup {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
@@ -2210,7 +2224,7 @@ template {
   .footer-wrapper {
     grid-column-gap: 30px;
   }
-  .footer__input {
+  .footer__input-grup {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2399,6 +2413,10 @@ template {
   .search__input {
     width: 254px;
   }
+  .footer__message {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 322px) {
@@ -2435,8 +2453,8 @@ template {
         flex-basis: 94%;
   }
   .footer__message {
-    -ms-flex-preferred-size: 94%;
-        flex-basis: 94%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .footer__legal {
     margin-left: 0;
