@@ -111,6 +111,7 @@ $(document).ready(function () {
   $(document).ready(function () {
     $(".modal__number").mask("+7 (000) 000-00-00");
   });
-
+  
+AOS.init();
 
 });
