@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan - Hotel Booking</title>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,600&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -138,7 +136,7 @@
                             <img class="swiper-slide__img hotel-slider__img" src="img/slide1.jpg" alt="">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
-                            <img class="swiper-slide__img hotel-slider__img" src="img/slide_2.jpeg" alt="">
+                            <img class="swiper-slide__img hotel-slider__img" src="img/slide_2.jpg" alt="">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
                             <img class="swiper-slide__img hotel-slider__img" src="img/slide_3.jpg" alt="">
@@ -190,7 +188,13 @@
                         <button data-toggle="modal" data-href="#booking-modal" class="button booking__buttom">View Other Options</button>
                     </div>
                     <!-- /.booking -->
-                    <div id="map"></div>
+                    <div id="map">
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15820.043373455539!2d79.79504776411586!3d7.573795655483459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1607612586142!5m2!1sru!2sru"
+                            style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0">
+                        </iframe>
+                    </div>
                     <!-- /.map -->
                 </div>
             </div>
@@ -359,7 +363,7 @@
                     <div class="swiper-slide">
                         <div class="reviews-slider__item">
                             <div class="reviews-slider__profile">
-                                <img src="img/avatar.jpg" alt="" class="reviews-slider__avatar">
+                                <img src="img/avatar.png" alt="" class="reviews-slider__avatar">
                                 <h3 class="reviews-slider__username">Megan Fox</h3>
                                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                                 <div class="reviews-slider__rating">
@@ -388,7 +392,7 @@
                     <div class="swiper-slide">
                         <div class="reviews-slider__item">
                             <div class="reviews-slider__profile">
-                                <img src="img/1.jpg" alt="" class="reviews-slider__avatar">
+                                <img src="img/1.png" alt="" class="reviews-slider__avatar">
                                 <h3 class="reviews-slider__username">Tyson</h3>
                                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                                 <div class="reviews-slider__rating">
@@ -409,7 +413,7 @@
                     <div class="swiper-slide">
                         <div class="reviews-slider__item">
                             <div class="reviews-slider__profile">
-                                <img src="img/2.jpg" alt="" class="reviews-slider__avatar">
+                                <img src="img/2.png" alt="" class="reviews-slider__avatar">
                                 <h3 class="reviews-slider__username">Alen Car</h3>
                                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                                 <div class="reviews-slider__rating">
@@ -439,7 +443,7 @@
         <div class="container">
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
-                <div class="card activities__card"data-aos="fade-up" data-aos-delay="100">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/activiti5.jpg" alt="" class="card__image">
                     <h3 class="card__title">The curious corner
                         of chamarel</h3>
@@ -448,7 +452,7 @@
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card"data-aos="fade-up" data-aos-delay="200">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
                     <img src="img/activiti2.jpg" alt="" class="card__image">
                     <h3 class="card__title">Gymkhana club golf
                         course</h3>
@@ -457,7 +461,7 @@
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card"data-aos="fade-up" data-aos-delay="300">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
                     <img src="img/activiti3.jpg" alt="" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking
                         trip - full day</h3>
@@ -466,7 +470,7 @@
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
-                <div class="card activities__card"data-aos="fade-up" data-aos-delay="400">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="400">
                     <img src="img/activiti4.jpg" alt="" class="card__image">
                     <h3 class="card__title">The blue marine discovery
                         quest</h3>
