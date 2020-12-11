@@ -20,7 +20,7 @@
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/logo__horizont.svg" alt="logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="" class="search navbar__search navbar__search--mobile_hidden">
@@ -109,9 +109,10 @@
       <div class="hotel-info">
         <div class="hotel-info__text">
           <div class="hotel-wrapper" style="flex-direction: column; align-items: flex-start;">
-            <h1 class="hotel-name hotel-info__name" style="margin-bottom: 10px;">Спасибо сообщение отправлено!</h1>
-            <p class="hote-description hotel-info__description" style="margin-bottom: 10px;">Наш менеджер позвонит вам через 5 минут.</p>
-            <a href="index.html" class="button modal__button">На главную</a>
+            <h1 class="hotel-name hotel-info__name" style="margin-bottom: 10px;">Thank you message sent!</h1>
+            <p class="hote-description hotel-info__description" style="margin-bottom: 10px;">
+            Our Manager will call you in 5 minutes</p>
+            <a href="index.html" class="button modal__button">Main</a>
           </div>
           
         </div>
@@ -176,7 +177,7 @@
               <a href="#" class="footer__link">Promote your Business on BTP</a>
             </li>
           </ul>
-
+  
         </div>
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
@@ -188,7 +189,7 @@
               <img src="img/yt.svg" alt="">
             </a>
             <a href="#" class="footer__link footer__link--mr-1">
-
+  
               <img src="img/inst.svg" alt="">
             </a>
           </div>
@@ -225,10 +226,10 @@
                 <img src="img/phone.svg" class="footer__icon" alt="">
               </div>
               <div class="footer__wrap-tel">
-                <span>Tel (business hours) : <a href="#" type="tel" class="footer__link">269 1500</a> </span>
-                <span>Tel (hotline) Monday - Saturday: <a href="#" type="tel" class="footer__link">52-56-61-38</a>
+                <span>Tel (business hours) : <a href="#" class="footer__link" type="tel">269 1500</a> </span>
+                <span>Tel (hotline) Monday - Saturday: <a href="#" class="footer__link" type="tel">52-56-61-38</a>
                   (08:00 am – 20:00 pm)</span>
-                <span>(hotline) Sunday: <a href="#" type="tel" class="footer__link">52-56-61-38</a> (08:00 am –
+                <span>(hotline) Sunday: <a href="#" class="footer__link" type="tel">52-56-61-38</a> (08:00 am –
                   14:00 pm)</span>
               </div>
             </li>
@@ -236,21 +237,26 @@
               <div class="footer__icon-wrapper">
                 <img src="img/mail.svg" class="footer__icon" alt="">
               </div>
-              <a href="#" type="mail" class="footer__link">cherly.lawson@example.com</a>
+              <a href="#" class="footer__link" type="mailto">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
-        <div class="footer__contacts-form">
+        <div class="footer__contacts-form ">
           <h3 class="footer__title">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form" name="name">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="phone">
-            <input type="text" class="input footer__input" placeholder="Phone Number*">
-            <textarea placeholder="Message" class="footer__message" name="message"></textarea>
+          <form action="sen.php" method="POST" class="footer__form form">
+            <div class="footer__input-grup">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+            </div>
+            <div class="footer__input-grup">
+              <input type="tel" class="input footer__input modal__number" placeholder="Phone Number*" name="phone"
+                required minlength="6">
+            </div>
+            <textarea placeholder="Message" class="message footer__message" name="message"></textarea>
             <div class="footer__down">
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </div>
-
+  
           </form>
         </div>
       </div>

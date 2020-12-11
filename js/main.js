@@ -73,7 +73,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Your phone number",
-          minlength: " at least 6 characters",
+          minlength: " at least 10 characters",
         },
         mail: {
           required: "We need your email address to contact you",

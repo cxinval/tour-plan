@@ -1,5 +1,5 @@
 .packages
-  padding: 40px 0 70px 0
+  padding: 12px 0 70px 0
   &__title
     font-style: normal
     font-weight: bold
@@ -25,18 +25,27 @@
       border-radius: 8px 0 0 8px
     &-info
       background-color: #0A223D
-      padding: 46px 21px 35px 44px
+      padding: 38px 21px 35px 44px
       border-radius: 0 8px 8px 0
     &-stars
-      margin-bottom: 5px
+      margin-bottom: 3px
     &-info__text
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 160.6%
       color: #FFFFFF
-      margin-bottom: 34px
-  &-item 
+      margin-bottom: 41px
+    &__nomone
+      margin-top: 41px !important
+      display: block
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+      color: #FFFFFF
+  &-item
     height: 500px
     display: flex
     flex-direction: column
@@ -47,14 +56,15 @@
       object-fit: cover
     &__info
       margin-right: 0
-      background-color: #0A223D 
+      background-color: #0A223D
       max-width: 350px
-      min-height: 250px 
+      min-height: 250px
       padding: 30px 21px 25px 32px
       border-radius: 0 0 8px 8px
     &-gid
       display: flex
       align-items: center
+      margin-left: 3px
       &:not(:last-child)
         margin-bottom: 11px
     &-gid__icon
@@ -66,6 +76,8 @@
       line-height: 15px
       color: #FFFFFF
     &__nomone
+      margin-top: 25px
+      display: block
       font-style: normal
       font-weight: normal
       font-size: 14px
@@ -74,11 +86,11 @@
       color: #FFFFFF
 
     &-buttons
-      margin-top: 5px
       display: flex
       max-width: 297px
       align-items: center
       justify-content: space-between
+      margin-left: 2px
     &__price
       font-style: normal
       font-weight: bold
@@ -109,4 +121,33 @@
   line-height: 23px
   color: #FFFFFF
   margin-top: 0
-
+  margin-bottom: 22px
+.packages-label
+  white-space: nowrap
+  padding: 8px 21px 7px 11px
+  position: absolute
+  font-weight: 600
+  font-size: 12px
+  line-height: 15px
+  top: 26px
+  left: 0
+  max-width: 95px
+  min-height: 30px
+  background-color: $primary
+  color: $light
+  border-radius: 0 4px 4px 0
+.packages-item__label
+  white-space: nowrap
+  padding: 4px 9px
+  position: absolute
+  font-style: normal
+  font-weight: 600
+  font-size: 8px
+  line-height: 10px
+  top: 26px
+  left: 0
+  max-width: 60px
+  min-height: 18px
+  background-color: $primary
+  color: $light
+  border-radius: 0 4px 4px 0
