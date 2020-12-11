@@ -62,6 +62,11 @@ $(document).ready(function () {
     }
   });
 
+   $(".packages-item__buttons").click(function () {
+     $(".modal__overlay").addClass("modal__overlay--visible");
+     $(".modal__dialog").addClass("modal__dialog--visible");
+   });
+
   // Обработка форм
 
   $(".form").each(function(){

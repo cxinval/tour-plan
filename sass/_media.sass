@@ -56,6 +56,7 @@
     &__buttom
       line-height: 10px
   .hotel
+    padding-top: 22px
     padding-bottom: 55px
     &-grid
       flex-direction: column
@@ -65,9 +66,13 @@
     &-right
       flex-direction: row
       margin-left: 0
+    &-info__description
+      margin-top: -2px
+  .rating
+    margin-top: 2px
   .booking
-    width: 340px
-    flex-basis: 49%
+    min-height: 210px
+    padding: 28px 33px 22px 22px
   #map
     flex-basis: 49%
     width: 340px
@@ -113,6 +118,12 @@
   .swiper-container
     height: 448px !important
   .packages
+    &-container
+      max-width: 782px
+    &-big-info__text
+      max-height: 67px !important
+      min-height: 67px !important
+      overflow-y: auto
     &-items
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: 400px 500px 500px
@@ -178,6 +189,7 @@
       grid-row: 2 / 3
       grid-column: span 2
       margin-top: -5px
+      margin-left: 0
     &__additional
       grid-column: span 2
       margin-top: -5px
@@ -188,7 +200,7 @@
       &-details
         grid-column: span 5
         grid-row: 3
-        margin-top: 18px
+        margin-top: 20px
       &-form
         grid-column: span 5
         grid-row: 4
@@ -197,14 +209,18 @@
       &--inline
         margin: 33px 44px 0 -51px
     &__input
-      width: 100%
+      width: 95%
     &__form
       max-width: 551px
     &__information
       margin-top: 55px
     &__info
       margin-right: 10px
-
+    &__message
+      flex-basis: 98% !important
+      margin-bottom: 25px
+    &__icon-wrapper
+      margin-left: 9px  !important
   .modal__info
     font-size: 9px
 
@@ -365,6 +381,14 @@
         flex-basis: 100%
   .modal__dialog
     padding: 33px 35px
+  .packages-big__nomone
+    margin-top: 19px !important
+  .newsletter-wrapper
+    align-items: center
+  .newsletter
+    padding: 30px 0 66px 0
+  #map
+    min-height: 250px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -467,6 +491,18 @@
     padding: 33px 35px
   .modal__message
     width: 100%
+  .hotel-slider
+    height: 285px !important
+  .parallax-mirror
+    height: 295px !important
+  .footer__title--inline
+    margin: 0px 44px 0 0px
+  .footer__additional
+    margin-left: 0
+  .footer__legal
+    margin-left: 0
+  .footer__message
+    flex-basis: 95% !important
 
 @media (max-width: 416px)
   .packages
@@ -481,7 +517,14 @@
     width: 254px
   .footer__message
     flex-basis: 100%
-
+  .hotel-slider
+    height: 285px !important
+  #map
+    min-height: 223px
+  .parallax-mirror
+    height: 296px !important
+  .footer__legal
+    margin-left: 0px
 @media (max-width: 322px)
   .hotel
     padding-top: 19px
@@ -570,8 +613,8 @@
     &:nth-child(3)
       order: 2
     &:nth-child(4)
-      order: 4   
-            
+      order: 4
+
   .footer
     padding-top: 45px
     &__title--inline
@@ -612,7 +655,19 @@
       font-size: 18px
   .modal__dialog
     width: 100%
-
+  .footer__information-links
+    min-width: 275px
+  .search__input
+    width: 228px
+  .navbar-menu
+    padding-top: 0
+  .navbar__bottom
+    height: 98vh
+    overflow-y: auto
+  .packages-item__img
+    max-width: 278px
+  .packages-item-buttons
+    max-width: 237px
 @media (max-height: 489px)
   .modal__dialog
     overflow-y: auto
