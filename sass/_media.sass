@@ -26,7 +26,19 @@
     &__input
       &-grup
         flex-basis: 100%
+  
+@media (min-width: 992px) 
+  .search__button
+    &:hover
+      background-color: #EC1F46
+  .button
+    &:hover
+      background-color: #EC1F46
+
+      
+  
 @media (max-width: 992px)
+
   .container, .newsletter-wrapper
     max-width: 700px
     width: 96%
@@ -120,10 +132,6 @@
   .packages
     &-container
       max-width: 782px
-    &-big-info__text
-      max-height: 67px !important
-      min-height: 67px !important
-      overflow-y: auto
     &-items
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: 400px 500px 500px
@@ -383,8 +391,7 @@
     padding: 33px 35px
   .packages-big__nomone
     margin-top: 19px !important
-  .newsletter-wrapper
-    align-items: center
+
   .newsletter
     padding: 30px 0 66px 0
   #map
@@ -424,7 +431,8 @@
     &-slider
       &__item
         padding: 0 20px 50px 20px
-        max-width: 281px
+        max-width: 560px
+        width: 100%
   .card
     flex-basis: 100%
   .packages
@@ -503,7 +511,6 @@
     margin-left: 0
   .footer__message
     flex-basis: 95% !important
-
 @media (max-width: 416px)
   .packages
     grid-template-columns: 250px
@@ -668,6 +675,20 @@
     max-width: 278px
   .packages-item-buttons
     max-width: 237px
+  .hotel-slider__button
+    background-size: 6px
+  .hotel-slider__button--prev
+    left: -4px
+  .hotel-slider__button--next
+    right: -4px
+  .navbar__search
+    margin-left: 0 !important
+  .navbar__bottom-container
+    margin-top: 15px
+  .stars-wrap
+    width: 54px
+  .reviews-slider__text
+    text-align: left
 @media (max-height: 489px)
   .modal__dialog
     overflow-y: auto

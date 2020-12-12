@@ -30,6 +30,9 @@ $(document).ready(function () {
     $(".navbar__bottom").toggleClass("navbar__bottom-active");
   });
 
+  
+  
+
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
 
@@ -66,7 +69,10 @@ $(document).ready(function () {
      $(".modal__overlay").addClass("modal__overlay--visible");
      $(".modal__dialog").addClass("modal__dialog--visible");
    });
-
+   $(".card__button").click(function () {
+     $(".modal__overlay").addClass("modal__overlay--visible");
+     $(".modal__dialog").addClass("modal__dialog--visible");
+   });
   // Обработка форм
 
   $(".form").each(function(){
@@ -81,6 +87,18 @@ $(document).ready(function () {
           minlength: " at least 10 characters",
         },
         mail: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
+  
+  $(".newsletter__subscribe").each(function () {
+    $(this).validate({
+      errorClass: "invali",
+      messages: {
+        email:{
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
         },

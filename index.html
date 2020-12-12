@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/b.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/b.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/b.png">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,600&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -40,7 +43,7 @@
         </div>
         <!-- /.container -->
         <div class="navbar__bottom">
-            <div class="container">
+            <div class="container navbar__bottom-container">
                 <ul class="navbar-menu">
                     <li class="navbar-menu__item navbar-menu__item--mobile_visible">
                         <a href="#" class="user navbar__user navbar__user--mobile_visible">
@@ -354,7 +357,7 @@
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
             <form action="sen.php" method="POST" class="subscribe newsletter__subscribe" >
-                <input class="subscribe__input"  placeholder="Your email address" name="mail">
+                <input class="subscribe__input"  placeholder="Your email address" name="email" required minlength="6" >
                 <button class="button subscribe__button">
                     Send
                 </button>
@@ -473,7 +476,7 @@
                     <h3 class="card__title card__title--size3">Tamarind falls hiking
                         trip - full day</h3>
                     <!-- /.card__title -->
-                    <button class="card__button">Book Now</button>
+                    <button class="card__button ">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
@@ -628,7 +631,7 @@
                             <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
                         </div>
                         <div class="footer__input-grup">
-                            <input type="tel" class="input footer__input modal__number" placeholder="Phone Number*" name="phone" required minlength="6">
+                            <input type="tel" class="input footer__input modal__number" placeholder="Phone Number*" name="phone" required minlength="18">
                         </div>
                         <textarea placeholder="Message" class="message footer__message" name="message"></textarea>
                         <div class="footer__down">
@@ -662,7 +665,7 @@
             <form action="sen.php" method="POST" class="modal__form form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
                 
-                <input type="tel" class="input modal__input modal__number" placeholder="Phone Number*" name="phone" minlength="10" required>
+                <input type="tel" class="input modal__input modal__number" placeholder="Phone Number*" name="phone" minlength="18" required>
                 <input type="email" class="input modal__input" placeholder="Email*" name="mail" required minlength="2">
                 <textarea placeholder="Message" class="message modal__message" name="message"></textarea>
                 <div class="modal__down">
