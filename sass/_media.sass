@@ -26,17 +26,38 @@
     &__input
       &-grup
         flex-basis: 100%
-  
-@media (min-width: 992px) 
-  .search__button
-    &:hover
-      background-color: #EC1F46
+
+@media (min-width: 992px)
   .button
     &:hover
-      background-color: #EC1F46
+      background-color: rgba(236, 31, 70, 0.8)
+  .card
+    &__button
+      &:hover
+        background-color: rgba(236, 31, 70, 0.8)
+  .breadcrumb
+    &__link
+      &:hover
+        color: #000
+  .user
+    &__name
+      &:hover
+        color: rgba(51, 51, 51, 0.5)
+  .footer
+    &__link
+      &:hover
+        color: rgba(189, 189, 189, 0.8)
+        text-decoration: underline
+      &-icons
+        fill: #BDBDBD
+        &:hover
+          fill: #ffffff
+    &__information
+      &-link
+        &:hover
+          color: rgba(189, 189, 189, 0.8)
+          text-decoration: underline
 
-      
-  
 @media (max-width: 992px)
 
   .container, .newsletter-wrapper
@@ -148,7 +169,7 @@
         &__title
           margin-bottom: 12px
         &__text
-          max-height: 120px
+          max-height: 85px
           font-size: 12px
     &-item
       grid-template-columns: 1fr
@@ -322,6 +343,7 @@
       flex-direction: column
       align-items: flex-start
   .reviews
+    padding-top: 40px
     &__title
       font-size: 30px
       line-height: 38px
@@ -391,15 +413,81 @@
     padding: 33px 35px
   .packages-big__nomone
     margin-top: 19px !important
-
   .newsletter
     padding: 30px 0 66px 0
   #map
     min-height: 250px
+  .footer
+    &__input
+      width: 100%
+    &__message
+      flex-basis: 100% !important
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-column-gap: 0
+    &-logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        display: flex
+        flex-direction: column
+        grid-row: 2
+        grid-column: 1
+        align-self: center
+      &-links
+        margin-top: 20px
+        justify-content: initial
+    &__link--mr-1:not(:last-child)
+      margin-right: 10px
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__additional
+      margin-left: 0
+      grid-row: 3
+      grid-column: span 2
+    &__legal
+      margin-left: 0
+      grid-column: 1
+      grid-row: 5
+    &__contacts
+      &-details
+        grid-column: 1
+        grid-row: 6
+      &-form
+        grid-column: 1
+        grid-row: 7
+    &__down
+      flex-direction: column
+      align-items: flex-start
+    &__button
+      order: 2
+    &__info
+      order: 1
+      margin-bottom: 15px
+    &__title
+      font-size: 14px
+      &--inline
+        margin: 33px 44px 0 0
+    &__information-wrap
+      flex-direction: column
+      align-items: start
+      min-width: 100%
+    &__information-links
+      margin-bottom: 20px
+  .navbar__search
+    margin-left: 0
+
 @media (max-width: 576px)
+  .container
+    max-width: 480px
+  .newsletter-wrapper
+    max-width: 349px
   .logo
     width: 99px
   .hotel
+    padding-top: 10px
     padding-bottom: 40px
     &__slider
       margin-bottom: 20px
@@ -509,8 +597,9 @@
     margin-left: 0
   .footer__legal
     margin-left: 0
-  .footer__message
-    flex-basis: 95% !important
+  .swiper-container
+    height: 325px !important
+
 @media (max-width: 416px)
   .packages
     grid-template-columns: 250px
@@ -532,6 +621,28 @@
     height: 296px !important
   .footer__legal
     margin-left: 0px
+  .packages__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin-bottom: 15px
+  .packages-big__img, .packages-item__img
+    max-width: 311px
+    min-width: 86%
+  .packages-big-info, .packages-item__info
+    max-width: 311px
+    min-width: 86%
+  .reviews-slider
+    height: 359px
+  .activities
+    padding-top: 10px
+  .packages-big-info
+    max-width: 311px
+    min-width: 100% !important
+  .packages-item__info
+    max-width: 311px
+    min-width: 100% !important
 @media (max-width: 322px)
   .hotel
     padding-top: 19px
@@ -555,7 +666,7 @@
   .reviews
     padding-top: 40px
     &-slider
-      height: 482px !important
+      height: 315px !important
       &__text
         margin: auto
         max-width: 530px

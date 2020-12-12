@@ -16,8 +16,10 @@
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__button
+    overflow: hidden
     max-width: 160px
     width: 100%
+    text-overflow: ellipsis
   &-logo
     width: 152px
     margin-top: 31px
@@ -88,9 +90,6 @@
     text-decoration: none
     color: inherit
     transition: all 0.2s
-    &:hover
-      color: rgba(189, 189, 189, 0.8)
-      text-decoration: underline
   &__input
     width: 100%
     &-grup
@@ -134,9 +133,6 @@
       color: $light
       text-decoration: none
       transition: all 0.2s
-      &:hover
-        color: rgba(189, 189, 189, 0.8)
-        text-decoration: underline
     &-icon
       width: 136px
       height: 22px
@@ -146,7 +142,5 @@
     flex-direction: column
 .footer__link-icons
   fill: #BDBDBD
-  &:hover
-    fill: #ffffff
 
   
